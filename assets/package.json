@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood_adolphe_thomas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Z-mot/OhmyFood_ADOLPHE_Thomas.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "browserslist": "last 2 versions",
+  "bugs": {
+    "url": "https://github.com/Z-mot/OhmyFood_ADOLPHE_Thomas/issues"
+  },
+  "homepage": "https://github.com/Z-mot/OhmyFood_ADOLPHE_Thomas#readme"
+}
