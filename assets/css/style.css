@@ -1,2 +1,82 @@
+@charset "UTF-8";
+/* déclaration variables de couleurs*/
+/* mise en place de la police graphique*/
+* {
+  font-family: "roboto", sans-serif;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+h1 {
+  font-family: "shrikhand", sans-serif;
+}
+
+/*Header*/
+header {
+  display: flex;
+  justify-content: center;
+}
+header #logo > img {
+  width: 50vw;
+}
+
+/* mise en forme du bouton*/
+button {
+  font-size: 5vw;
+  border-radius: 25px;
+  padding: 10px;
+  background: radial-gradient(circle, #FF79DA 50%, #9356DC 100%);
+}
+
+/* mise en forme de la géolocalisation*/
+#geoloc {
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+  box-shadow: inset 0px 5px 5px grey;
+}
+@media screen and (min-width: 768px) {
+  #geoloc {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #geoloc {
+    justify-content: flex-start;
+  }
+}
+#geoloc > i {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-right: 7px;
+}
+#geoloc > p {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+/* fin de la mise en forme de la géolocalisation*/
+/*mise en forme de la présentation*/
+.prez {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  padding: 2vh 0vh 2vh 0vh;
+}
+.prez__title {
+  font-size: 9vw;
+  width: 90%;
+}
+.prez__title > p {
+  text-align: center;
+}
+.prez__subtitle {
+  font-size: 5vw;
+  width: 90%;
+}
+.prez__subtitle > p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
