@@ -1,0 +1,11 @@
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+@mixin pad {
+    @media screen and (min-width: map-get($breakpoints, pad)){
+        @content;
+    }
+}
