@@ -1,7 +1,9 @@
 /* mise en forme du bouton*/ 
 button {
     font-size: 5vw;
-    border-radius: 25px;
-    padding: 10px;
-    background: radial-gradient(circle, #FF79DA 50% ,#9356DC 100%);
+    border-radius: 50px;
+    padding: 20px;
+    background: radial-gradient(ellipse at top left, #FF79DA 10%, #9356DC 100%);
+    color: white;
+    border: none;
 }
