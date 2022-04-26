@@ -16,12 +16,12 @@
     > i {
         display: flex;
         align-items: center;
-        font-size: 1.4rem;
+        font-size: 5vw;
         padding-right: 7px;
     }
 
     > p {
-        font-size: 1.1rem;
+        font-size: 4vw;
         font-weight: bolder;
     }
 }/* fin de la mise en forme de la géolocalisation*/
@@ -33,11 +33,12 @@
     justify-content: center;
     align-items: center;
     background-color: $lgg;
-    padding: 2vh 0vh 2vh 0vh;
+    padding: 2vh 0vh 7vh 0vh;
 
     &__title {
         font-size: 9vw;
         width: 90%;
+        font-weight: bolder;
         
         > p {
             text-align: center;
@@ -47,9 +48,64 @@
     &__subtitle {
         font-size: 5vw;
         width: 90%;
+        padding-bottom: 2vh;
         
         > p {
             text-align: center;
         }
+    }
+}/*fin mise en forme de la présentation*/ 
+
+/*mise en forme de la partie fonctionnement*/
+.running {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 7vw;
+        width: 90%;
+        font-weight: bolder;
+    }
+
+    &__case {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 0px 20px 0px 20px;
+        margin: 15px 0px 15px 0px;
+        width: 80%;
+        background-color: $lgg;
+        border: none;
+        box-shadow:  2px 8px 15px $dkg;
+        
+        &__num {
+            display:flex;
+            font-size: 5vw;
+            border-radius: 100%;
+            background-color: $primaire;
+            color: white;
+            position: relative;
+            right: 37px;
+            padding: 1vw 2.5vw 1vw 2.5vw;
+            
+        }
+        
+         i {
+            display:flex;
+            align-items: center;
+            font-size: 5vw;
+            color: darkgrey;
+         }
+
+         &__descript {
+            display: flex;
+            align-items: center;
+            font-size: 4vw;
+            font-weight: bold;
+            padding-left: 35px;
+         }
+
     }
 }

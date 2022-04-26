@@ -21,16 +21,18 @@ header #logo > img {
 /* mise en forme du bouton*/
 button {
   font-size: 5vw;
-  border-radius: 25px;
-  padding: 10px;
-  background: radial-gradient(circle, #FF79DA 50%, #9356DC 100%);
+  border-radius: 50px;
+  padding: 20px;
+  background: radial-gradient(ellipse at top left, #FF79DA 10%, #9356DC 100%);
+  color: white;
+  border: none;
 }
 
 /* mise en forme de la géolocalisation*/
 #geoloc {
   display: flex;
   justify-content: center;
-  background-color: darkgrey;
+  background-color: rgb(214, 212, 212);
   box-shadow: inset 0px 5px 5px grey;
 }
 @media screen and (min-width: 768px) {
@@ -46,11 +48,11 @@ button {
 #geoloc > i {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 5vw;
   padding-right: 7px;
 }
 #geoloc > p {
-  font-size: 1.1rem;
+  font-size: 4vw;
   font-weight: bolder;
 }
 
@@ -61,12 +63,13 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
-  padding: 2vh 0vh 2vh 0vh;
+  background-color: rgb(240, 238, 238);
+  padding: 2vh 0vh 7vh 0vh;
 }
 .prez__title {
   font-size: 9vw;
   width: 90%;
+  font-weight: bolder;
 }
 .prez__title > p {
   text-align: center;
@@ -74,9 +77,58 @@ button {
 .prez__subtitle {
   font-size: 5vw;
   width: 90%;
+  padding-bottom: 2vh;
 }
 .prez__subtitle > p {
   text-align: center;
+}
+
+/*fin mise en forme de la présentation*/
+/*mise en forme de la partie fonctionnement*/
+.running {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.running__title {
+  font-size: 7vw;
+  width: 90%;
+  font-weight: bolder;
+}
+.running__case {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
+  margin: 15px 0px 15px 0px;
+  width: 80%;
+  background-color: rgb(240, 238, 238);
+  border: none;
+  box-shadow: 2px 8px 15px rgb(214, 212, 212);
+}
+.running__case__num {
+  display: flex;
+  font-size: 5vw;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  position: relative;
+  right: 37px;
+  padding: 1vw 2.5vw 1vw 2.5vw;
+}
+.running__case i {
+  display: flex;
+  align-items: center;
+  font-size: 5vw;
+  color: darkgrey;
+}
+.running__case__descript {
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-left: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
