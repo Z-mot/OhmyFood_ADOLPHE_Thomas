@@ -9,3 +9,16 @@
         @content;
     }
 }
+
+@mixin fbcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title {
+    font-size: 7vw;
+    width: 90%;
+    font-weight: bolder;
+}

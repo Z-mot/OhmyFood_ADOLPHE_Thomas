@@ -2,8 +2,9 @@
 header {
     display: flex;
     justify-content: center;
+    padding: 5px;
 
-    #logo > img {
+    .logo > img {
         width: 50vw;
     }
 }
