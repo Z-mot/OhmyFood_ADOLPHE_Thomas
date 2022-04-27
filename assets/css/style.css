@@ -1,5 +1,66 @@
 @charset "UTF-8";
 /* déclaration variables de couleurs*/
+@keyframes heart-fillup {}
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, address, cite, code, del, dfn, em, img, ins,
+small, strong, sub, sup, var, i, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
 /* mise en place de la police graphique*/
 * {
   font-family: "roboto", sans-serif;
@@ -13,8 +74,9 @@ h1 {
 header {
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
-header #logo > img {
+header .logo > img {
   width: 50vw;
 }
 
@@ -47,6 +109,12 @@ button::after {
   opacity: 0;
   transition: opacity 350ms;
   z-index: -1;
+}
+
+.fa-heart {
+  color: #9356DC;
+  padding: 0.2em;
+  font-size: 3.4vh;
 }
 
 /* mise en forme de la géolocalisation*/
@@ -85,7 +153,7 @@ button::after {
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 238, 238);
-  padding: 2vh 0vh 7vh 0vh;
+  padding: 15px 0px 30px 0px;
 }
 .prez__title {
   font-size: 9vw;
@@ -98,7 +166,7 @@ button::after {
 .prez__subtitle {
   font-size: 5vw;
   width: 90%;
-  padding-bottom: 2vh;
+  padding-bottom: 15px;
 }
 .prez__subtitle > p {
   text-align: center;
@@ -111,6 +179,7 @@ button::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .running__title {
   font-size: 7vw;
@@ -119,7 +188,6 @@ button::after {
 }
 .running__case {
   display: flex;
-  border: 2px solid black;
   border-radius: 20px;
   padding: 0px 20px 0px 20px;
   margin: 15px 0px 15px 0px;
@@ -136,7 +204,7 @@ button::after {
   color: white;
   position: relative;
   right: 37px;
-  padding: 1vw 2.5vw 1vw 2.5vw;
+  padding: 1vw 2vw 1vw 2vw;
 }
 .running__case i {
   display: flex;
@@ -151,8 +219,67 @@ button::after {
   font-weight: bold;
   padding-left: 35px;
 }
-.running img {
-  display: none;
+
+/*fin mise en forme de la partie fonctionnement*/
+/*mise en forme de la partie restaurants*/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 238, 238);
+  padding-bottom: 50px;
+}
+.restaurant__title {
+  font-size: 7vw;
+  width: 90%;
+  font-weight: bolder;
+}
+.restaurant__card {
+  display: flex;
+  width: 90%;
+  margin: 20px 0px 20px 0px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px grey;
+}
+.restaurant__card a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+}
+.restaurant__card__image {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  height: 200px;
+}
+.restaurant__card__image img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.restaurant__card__body {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 0px 0px 25px 25px;
+  padding: 0px 20px 0px 20px;
+}
+.restaurant__card__body__text {
+  color: black;
+}
+.restaurant__card__body__text__name {
+  font-weight: bold;
+  font-size: 4.5vw;
+}
+.restaurant__card__body__text__location {
+  font-size: 4vw;
+}
+.restaurant__card__body__heart {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

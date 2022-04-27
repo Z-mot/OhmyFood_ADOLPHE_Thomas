@@ -28,12 +28,9 @@
 
 /*mise en forme de la présentation*/ 
 .prez {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include fbcolumn;
     background-color: $lgg;
-    padding: 2vh 0vh 7vh 0vh;
+    padding: 15px 0px 30px 0px;
 
     &__title {
         font-size: 9vw;
@@ -48,7 +45,7 @@
     &__subtitle {
         font-size: 5vw;
         width: 90%;
-        padding-bottom: 2vh;
+        padding-bottom: 15px;
         
         > p {
             text-align: center;
@@ -58,20 +55,15 @@
 
 /*mise en forme de la partie fonctionnement*/
 .running {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include fbcolumn;
+    padding-bottom: 50px;
 
     &__title {
-        font-size: 7vw;
-        width: 90%;
-        font-weight: bolder;
+        @include title;
     }
 
     &__case {
         display: flex;
-        border: 2px solid black;
         border-radius: 20px;
         padding: 0px 20px 0px 20px;
         margin: 15px 0px 15px 0px;
@@ -88,7 +80,7 @@
             color: white;
             position: relative;
             right: 37px;
-            padding: 1vw 2.5vw 1vw 2.5vw;
+            padding: 1vw 2vw 1vw 2vw;
             
         }
         
@@ -108,7 +100,70 @@
          }
 
     }
-    img {
-        display: none;
+}/*fin mise en forme de la partie fonctionnement*/
+
+/*mise en forme de la partie restaurants*/
+.restaurant {
+    @include fbcolumn;
+    background-color: $lgg;
+    padding-bottom: 50px;
+
+    &__title {
+        @include title;
+    }
+    &__card {
+        display: flex;
+        width: 90%;
+        margin: 20px 0px 20px 0px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 8px grey;
+
+        a {
+            display: flex;
+            flex-direction:column;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        &__image {
+            display:flex;
+            overflow: hidden;
+            width:100%;
+            border-radius: 25px 25px 0px 0px;
+            height: 200px;
+            
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+
+        &__body {
+            display:flex;
+            background-color: white;
+            justify-content:space-between;
+            border-radius: 0px 0px 25px 25px;
+            padding: 0px 20px 0px 20px;
+
+            &__text {
+                color:black;
+                &__name {
+                    font-weight: bold;
+                    font-size: 4.5vw;
+                }
+    
+                &__location {
+                    font-size: 4vw;
+                }
+            }
+            
+            &__heart{
+                display: flex;
+                align-items: center;
+            }
+                        
+        }
     }
 }
