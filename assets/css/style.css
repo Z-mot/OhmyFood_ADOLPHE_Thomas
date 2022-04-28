@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /* déclaration variables de couleurs*/
-@keyframes heart-fillup {}
+@keyframes heart-fillup {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+    color: red;
+  }
+}
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -64,6 +72,7 @@ input, select {
 /* mise en place de la police graphique*/
 * {
   font-family: "roboto", sans-serif;
+  color: black;
 }
 
 h1 {
@@ -78,6 +87,48 @@ header {
 }
 header .logo > img {
   width: 50vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #403f3f;
+  padding-bottom: 25px;
+}
+footer .logo {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+}
+footer .logo img {
+  height: 2vh;
+  padding: 20px 10px 15px 0px;
+  filter: invert(100);
+}
+footer ul {
+  width: 90%;
+  list-style-type: none;
+  line-height: 1.5;
+}
+footer ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+footer ul li a i {
+  color: white;
+}
+footer ul li a p {
+  padding-left: 15px;
+  margin: 0;
+  color: white;
+}
+footer ul li a .partner {
+  padding-left: 10px;
+  margin: 0;
+  color: white;
 }
 
 /* mise en forme du bouton*/
@@ -111,10 +162,25 @@ button::after {
   z-index: -1;
 }
 
-.fa-heart {
+/*animation du coeur qui se remplie*/
+.restaurant__card__body__heart--from > i {
+  position: absolute;
+  right: 9vw;
+  font-size: 7vw;
   color: #9356DC;
-  padding: 0.2em;
-  font-size: 3.4vh;
+  z-index: 1;
+}
+.restaurant__card__body__heart--to > i {
+  position: absolute;
+  right: 9vw;
+  font-size: 7vw;
+  color: #9356DC;
+  z-index: 2;
+  transform-origin: center 75%;
+  transform: scale(0, 0);
+}
+.restaurant__card__body__heart:hover .restaurant__card__body__heart--to > i {
+  animation: heart-fillup 450ms 150ms forwards;
 }
 
 /* mise en forme de la géolocalisation*/
@@ -206,7 +272,7 @@ button::after {
   right: 37px;
   padding: 1vw 2vw 1vw 2vw;
 }
-.running__case i {
+.running__case > i {
   display: flex;
   align-items: center;
   font-size: 5vw;
@@ -267,9 +333,6 @@ button::after {
   border-radius: 0px 0px 25px 25px;
   padding: 0px 20px 0px 20px;
 }
-.restaurant__card__body__text {
-  color: black;
-}
 .restaurant__card__body__text__name {
   font-weight: bold;
   font-size: 4.5vw;
@@ -278,6 +341,14 @@ button::after {
   font-size: 4vw;
 }
 .restaurant__card__body__heart {
+  display: flex;
+  align-items: center;
+}
+.restaurant__card__body__heart--from {
+  display: flex;
+  align-items: center;
+}
+.restaurant__card__body__heart--to {
   display: flex;
   align-items: center;
 }

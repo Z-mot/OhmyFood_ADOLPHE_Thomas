@@ -84,7 +84,7 @@
             
         }
         
-         i {
+         >i {
             display:flex;
             align-items: center;
             font-size: 5vw;
@@ -148,7 +148,6 @@
             padding: 0px 20px 0px 20px;
 
             &__text {
-                color:black;
                 &__name {
                     font-weight: bold;
                     font-size: 4.5vw;
@@ -162,8 +161,18 @@
             &__heart{
                 display: flex;
                 align-items: center;
-            }
-                        
+
+                &--from{
+                    display: flex;
+                    align-items: center;
+                }
+
+                &--to {
+                    display: flex;
+                    align-items: center;
+                }
+
+            }              
         }
     }
 }
