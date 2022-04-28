@@ -22,3 +22,10 @@
     width: 90%;
     font-weight: bolder;
 }
+
+@mixin heartpos {
+    position: absolute;
+    right: 9vw;
+    font-size: 7vw;
+    color: $primaire;
+}
