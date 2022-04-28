@@ -1,5 +1,20 @@
-.fa-heart {
-    color: $primaire;
-    padding:.2em;
-    font-size: 3.4vh;
-}
+/*animation du coeur qui se remplie*/
+
+.restaurant__card__body__heart {
+    &--from > i {
+    @include heartpos;
+    z-index: 1;
+    }
+
+    &--to > i {
+    @include heartpos;
+    z-index: 2;
+    transform-origin: center 75%;
+    transform: scale(0, 0);
+    
+    }
+
+    &:hover .restaurant__card__body__heart--to >i {
+    animation: heart-fillup 450ms 150ms forwards;
+    }
+} 
