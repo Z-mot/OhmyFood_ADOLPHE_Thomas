@@ -1,3 +1,4 @@
+/*keyframes coeur*/
 @keyframes heart-fillup {
     from {
         transform: scale(0,0);
@@ -5,6 +6,23 @@
 
     to {
         transform: scale(1,1);
-        color: red;
+        
+    }
+}
+
+/*keyframes background spinner*/
+@keyframes loader {
+    100% {
+        opacity:0;
+    }
+}
+
+/*keyframes spinner*/
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1800deg);
     }
 }
