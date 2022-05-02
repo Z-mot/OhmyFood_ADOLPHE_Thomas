@@ -8,16 +8,35 @@
 
     &__hat {
         position: absolute;
-        left: 35%;
+        left: 38%;
         top: 40%;
         transform-origin: 50% 10%;
         animation: spinner 6000ms 150ms both infinite linear;
+      
+        @include pad {
+            left: 40%;
+        }
+
+        @include desktop {
+            left: 40%;
+        }
+
 
         &__cube {
             width: 150px;
             height: 180px;
             position: relative;
             background: radial-gradient(ellipse at top, $primaire 20%, $secondaire 100%); 
+          
+            @include pad {
+                width: 250px;
+                height: 280px;
+            }
+
+            @include desktop {
+                width: 350px;
+                height: 380px;
+            }
         }
 
         &__circle1 {
@@ -28,6 +47,20 @@
             position: relative;
             bottom: 230px;
             right: 50px;
+          
+            @include pad {
+                width: 170px;
+                height: 170px;
+                bottom: 380px;
+                right: 60px;
+            }
+
+            @include desktop {
+                width: 230px;
+                height: 230px;
+                bottom: 490px;
+                right: 100px;
+            }
         }
 
         &__circle2 {
@@ -38,7 +71,21 @@
             position: relative;
             bottom: 340px;
             left: 20px;
-            z-index: 1
+            z-index: 1;
+         
+            @include pad {
+                width: 170px;
+                height: 170px;
+                bottom: 520px;
+                left: 50px;
+            }
+
+            @include desktop {
+                width: 230px;
+                height: 230px;
+                bottom: 680px;
+                left: 65px;
+            }
         }
 
         &__circle3 {
@@ -49,6 +96,20 @@
             position: relative;
             bottom: 430px;
             left: 100px;
+          
+            @include pad {
+                width: 170px;
+                height: 170px;
+                bottom: 720px;
+                left: 150px;
+            }
+
+            @include desktop {
+                width: 230px;
+                height: 230px;
+                bottom: 950px;
+                left: 210px;
+            }
         }
 
         &__band {
@@ -60,6 +121,18 @@
             height: 50px;
             position: relative;
             bottom: 350px;
+          
+            @include pad {
+                width: 250px;
+                height: 80px;
+                bottom: 580px
+            }
+
+            @include desktop {
+                width: 350px;
+                height: 100px;
+                bottom: 790px;
+            }
 
             > img {
                 width: 90%;

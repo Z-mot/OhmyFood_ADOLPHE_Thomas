@@ -209,16 +209,38 @@ button::after {
 }
 .loader__hat {
   position: absolute;
-  left: 35%;
+  left: 38%;
   top: 40%;
   transform-origin: 50% 10%;
   animation: spinner 6000ms 150ms both infinite linear;
+}
+@media screen and (min-width: 768px) {
+  .loader__hat {
+    left: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat {
+    left: 40%;
+  }
 }
 .loader__hat__cube {
   width: 150px;
   height: 180px;
   position: relative;
   background: radial-gradient(ellipse at top, #9356DC 20%, #FF79DA 100%);
+}
+@media screen and (min-width: 768px) {
+  .loader__hat__cube {
+    width: 250px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat__cube {
+    width: 350px;
+    height: 380px;
+  }
 }
 .loader__hat__circle1 {
   width: 100px;
@@ -228,6 +250,22 @@ button::after {
   position: relative;
   bottom: 230px;
   right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .loader__hat__circle1 {
+    width: 170px;
+    height: 170px;
+    bottom: 380px;
+    right: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat__circle1 {
+    width: 230px;
+    height: 230px;
+    bottom: 490px;
+    right: 100px;
+  }
 }
 .loader__hat__circle2 {
   width: 100px;
@@ -239,6 +277,22 @@ button::after {
   left: 20px;
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .loader__hat__circle2 {
+    width: 170px;
+    height: 170px;
+    bottom: 520px;
+    left: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat__circle2 {
+    width: 230px;
+    height: 230px;
+    bottom: 680px;
+    left: 65px;
+  }
+}
 .loader__hat__circle3 {
   width: 100px;
   height: 100px;
@@ -247,6 +301,22 @@ button::after {
   position: relative;
   bottom: 430px;
   left: 100px;
+}
+@media screen and (min-width: 768px) {
+  .loader__hat__circle3 {
+    width: 170px;
+    height: 170px;
+    bottom: 720px;
+    left: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat__circle3 {
+    width: 230px;
+    height: 230px;
+    bottom: 950px;
+    left: 210px;
+  }
 }
 .loader__hat__band {
   justify-content: center;
@@ -257,6 +327,20 @@ button::after {
   height: 50px;
   position: relative;
   bottom: 350px;
+}
+@media screen and (min-width: 768px) {
+  .loader__hat__band {
+    width: 250px;
+    height: 80px;
+    bottom: 580px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader__hat__band {
+    width: 350px;
+    height: 100px;
+    bottom: 790px;
+  }
 }
 .loader__hat__band > img {
   width: 90%;
