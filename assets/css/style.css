@@ -1,12 +1,27 @@
 @charset "UTF-8";
 /* déclaration variables de couleurs*/
+/*keyframes coeur*/
 @keyframes heart-fillup {
   from {
     transform: scale(0, 0);
   }
   to {
     transform: scale(1, 1);
-    color: red;
+  }
+}
+/*keyframes background spinner*/
+@keyframes loader {
+  100% {
+    opacity: 0;
+  }
+}
+/*keyframes spinner*/
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1800deg);
   }
 }
 /*
@@ -102,7 +117,7 @@ footer .logo {
   width: 90%;
 }
 footer .logo img {
-  height: 2vh;
+  height: 4vw;
   padding: 20px 10px 15px 0px;
   filter: invert(100);
 }
@@ -110,6 +125,7 @@ footer ul {
   width: 90%;
   list-style-type: none;
   line-height: 1.5;
+  font-size: 3vw;
 }
 footer ul li a {
   display: flex;
@@ -181,6 +197,69 @@ button::after {
 }
 .restaurant__card__body__heart:hover .restaurant__card__body__heart--to > i {
   animation: heart-fillup 450ms 150ms forwards;
+}
+
+.loader {
+  animation: loader 4000ms forwards cubic-bezier(0.82, 0.13, 0.83, 0.13);
+  width: 100%;
+  height: 100%;
+  background-color: rgb(214, 212, 212);
+  position: fixed;
+  z-index: 10;
+}
+.loader__hat {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  transform-origin: 50% 10%;
+  animation: spinner 6000ms 150ms both infinite linear;
+}
+.loader__hat__cube {
+  width: 150px;
+  height: 180px;
+  position: relative;
+  background: radial-gradient(ellipse at top, #9356DC 20%, #FF79DA 100%);
+}
+.loader__hat__circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at top left, #9356DC 10%, #FF79DA 100%);
+  position: relative;
+  bottom: 230px;
+  right: 50px;
+}
+.loader__hat__circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at top, #9356DC 10%, #FF79DA 100%);
+  position: relative;
+  bottom: 340px;
+  left: 20px;
+  z-index: 1;
+}
+.loader__hat__circle3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at top right, #9356DC 10%, #FF79DA 100%);
+  position: relative;
+  bottom: 430px;
+  left: 100px;
+}
+.loader__hat__band {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: radial-gradient(ellipse at bottom, #99E2D0 10%, #9356DC 100%);
+  width: 150px;
+  height: 50px;
+  position: relative;
+  bottom: 350px;
+}
+.loader__hat__band > img {
+  width: 90%;
 }
 
 /* mise en forme de la géolocalisation*/
