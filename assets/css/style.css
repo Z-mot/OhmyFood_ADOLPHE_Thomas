@@ -11,8 +11,14 @@
 }
 /*keyframes background spinner*/
 @keyframes loader {
-  100% {
+  0% {
+    opacity: 1;
+  }
+  90%, 100% {
     opacity: 0;
+  }
+  100% {
+    z-index: -10;
   }
 }
 /*keyframes spinner*/
