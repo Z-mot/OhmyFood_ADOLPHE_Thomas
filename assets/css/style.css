@@ -104,10 +104,24 @@ h1 {
 header {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+}
+header .logo {
+  display: flex;
 }
 header .logo > img {
   width: 50vw;
+}
+header .logo > a {
+  text-decoration: none;
+}
+header .logo > a > i {
+  display: flex;
+  position: relative;
+  right: 11vw;
+  font-size: 7vw;
+  align-items: center;
+  height: 100%;
 }
 
 footer {
