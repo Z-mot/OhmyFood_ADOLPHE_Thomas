@@ -1,6 +1,6 @@
 /*animation du coeur qui se remplie*/
 
-.restaurant__card__body__heart {
+.heart {
     &--from > i {
     @include heartpos;
     z-index: 1;
@@ -11,11 +11,16 @@
     z-index: 2;
     transform-origin: center 75%;
     transform: scale(0, 0);
-    
     }
 
-    &:hover .restaurant__card__body__heart--to >i {
-    animation: heart-fillup 450ms 150ms forwards;
+    &:active .restaurant__card__body__heart--to >i {
+        animation: heart-fillup 450ms 150ms forwards;
+    }
+
+    @include desktop {
+        &:hover .restaurant__card__body__heart--to >i {
+        animation: heart-fillup 450ms 150ms forwards;
+        }
     }
 } 
 

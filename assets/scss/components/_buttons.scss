@@ -9,12 +9,21 @@ button {
     position:relative;
     z-index: 1;
     
-
-    &:hover {
+    &:active {
         box-shadow: 1px 1px 5px grey;
 
         &::after {
             opacity: 1;
+        }
+    }
+
+    @include desktop {
+        &:hover {
+            box-shadow: 1px 1px 5px grey;
+
+            &::after {
+                opacity: 1;
+            }
         }
     }
 
@@ -26,7 +35,7 @@ button {
         right:0;
         top:0;
         bottom:0;
-        background: radial-gradient(ellipse at top left, $primaire_sombre 10%, $secondaire_sombre 100%); ;
+        background: radial-gradient(ellipse at top left, $primaire_clair 10%, $secondaire_clair 100%); ;
         opacity: 0;
         transition: opacity 350ms;
         z-index: -1;
