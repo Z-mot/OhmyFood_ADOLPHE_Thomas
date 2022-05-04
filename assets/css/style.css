@@ -167,6 +167,77 @@ footer ul li a .partner {
   color: white;
 }
 
+.img_prez img {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12vw 12vw 0vw 0vw;
+  position: relative;
+  bottom: 13vw;
+  background-color: rgb(214, 212, 212);
+}
+.menu > h1 {
+  padding: 5vw;
+  font-size: 7vw;
+}
+.menu .heart {
+  position: absolute;
+  left: 100vw;
+  top: 9vw;
+}
+.menu .dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .dish__sub {
+  position: relative;
+  right: 40vw;
+  width: 10vw;
+  border-top: 1vw solid #99E2D0;
+  margin-bottom: 3vw;
+}
+.menu .dish > h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 6vw;
+  font-weight: lighter;
+  margin: 0vw 0vw 1vw 0vw;
+}
+.menu .dish__case {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(240, 238, 238);
+  margin-bottom: 5vw;
+  box-shadow: 3px 3px 7px grey;
+}
+.menu .dish__case__text__dish {
+  font-size: 4.5vw;
+  font-weight: bold;
+  padding: 4vw 4vw 1vw 4vw;
+  margin: 0vw;
+}
+.menu .dish__case__text__accompaniment {
+  font-size: 3.5vw;
+  padding: 1vw 4vw 4vw 4vw;
+  margin: 0px;
+}
+.menu .dish__case__price {
+  display: flex;
+  align-items: flex-end;
+  padding: 5vw;
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
 /* mise en forme du bouton*/
 button {
   font-size: 5vw;
@@ -178,11 +249,19 @@ button {
   position: relative;
   z-index: 1;
 }
-button:hover {
+button:active {
   box-shadow: 1px 1px 5px grey;
 }
-button:hover::after {
+button:active::after {
   opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  button:hover {
+    box-shadow: 1px 1px 5px grey;
+  }
+  button:hover::after {
+    opacity: 1;
+  }
 }
 button::after {
   content: "";
@@ -192,21 +271,21 @@ button::after {
   right: 0;
   top: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at top left, #782cd3 10%, #ff46cc 100%);
+  background: radial-gradient(ellipse at top left, #a16be0 10%, #ff93e1 100%);
   opacity: 0;
   transition: opacity 350ms;
   z-index: -1;
 }
 
 /*animation du coeur qui se remplie*/
-.restaurant__card__body__heart--from > i {
+.heart--from > i {
   position: absolute;
   right: 9vw;
   font-size: 7vw;
   color: #9356DC;
   z-index: 1;
 }
-.restaurant__card__body__heart--to > i {
+.heart--to > i {
   position: absolute;
   right: 9vw;
   font-size: 7vw;
@@ -215,8 +294,13 @@ button::after {
   transform-origin: center 75%;
   transform: scale(0, 0);
 }
-.restaurant__card__body__heart:hover .restaurant__card__body__heart--to > i {
+.heart:active .restaurant__card__body__heart--to > i {
   animation: heart-fillup 450ms 150ms forwards;
+}
+@media screen and (min-width: 1024px) {
+  .heart:hover .restaurant__card__body__heart--to > i {
+    animation: heart-fillup 450ms 150ms forwards;
+  }
 }
 
 .loader {
@@ -523,15 +607,17 @@ button::after {
 .restaurant__card__body__text__location {
   font-size: 4vw;
 }
-.restaurant__card__body__heart {
+
+/*fin de la mise en formede la partie restaurant*/
+.heart {
   display: flex;
   align-items: center;
 }
-.restaurant__card__body__heart--from {
+.heart--from {
   display: flex;
   align-items: center;
 }
-.restaurant__card__body__heart--to {
+.heart--to {
   display: flex;
   align-items: center;
 }
