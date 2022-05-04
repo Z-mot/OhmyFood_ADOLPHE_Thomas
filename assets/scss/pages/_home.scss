@@ -157,22 +157,21 @@
                     font-size: 4vw;
                 }
             }
-            
-            &__heart{
-                display: flex;
-                align-items: center;
-
-                &--from{
-                    display: flex;
-                    align-items: center;
-                }
-
-                &--to {
-                    display: flex;
-                    align-items: center;
-                }
-
-            }              
-        }
+        }              
     }
+}/*fin de la mise en formede la partie restaurant*/
+            
+.heart {
+    display: flex;
+    align-items: center;
+
+    &--from {
+        display: flex;
+        align-items: center;
+    }
+
+    &--to {
+        display: flex;
+        align-items: center;
+    }         
 }

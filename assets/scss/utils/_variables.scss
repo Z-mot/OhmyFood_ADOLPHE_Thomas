@@ -4,9 +4,9 @@ $breakpoints: (
 
 /* déclaration variables de couleurs*/
 $primaire: #9356DC;
-$primaire_sombre: darken(#9356DC, 10);
+$primaire_clair: lighten(#9356DC, 5);
 $secondaire: #FF79DA;
-$secondaire_sombre: darken(#FF79DA, 10);
+$secondaire_clair: lighten(#FF79DA, 5);
 $tertiaire: #99E2D0;
 $lgg: rgb(240, 238, 238);
 $dkg: rgb(214, 212, 212);

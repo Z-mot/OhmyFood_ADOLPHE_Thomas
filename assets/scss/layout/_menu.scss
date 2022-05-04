@@ -31,8 +31,11 @@
         align-items: center;
 
         &__sub {
-            width:3vw;
-            border-top: 1px solid $tertiaire;
+            position: relative;
+            right: 40vw;
+            width: 10vw;
+            border-top: 1vw solid $tertiaire;
+            margin-bottom: 3vw;
         }
 
         > h2 {
@@ -41,7 +44,7 @@
             width: 90%;
             font-size: 6vw;
             font-weight: lighter;
-            margin: 0vw 0vw 4vw 0vw;
+            margin: 0vw 0vw 1vw 0vw;
         }
 
         &__case {
