@@ -10,7 +10,7 @@ button {
     z-index: 1;
     
     &:active {
-        box-shadow: 1px 1px 5px grey;
+        @include box-shadow;
 
         &::after {
             opacity: 1;
@@ -19,7 +19,7 @@ button {
 
     @include desktop {
         &:hover {
-            box-shadow: 1px 1px 5px grey;
+            @include box-shadow;
 
             &::after {
                 opacity: 1;

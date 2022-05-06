@@ -13,15 +13,31 @@
     transform: scale(0, 0);
     }
 
-    &:active .restaurant__card__body__heart--to >i {
-        animation: heart-fillup 450ms 150ms forwards;
+    &:active .heart--to >i {
+            animation: heart-fillup 450ms 150ms forwards;
+        }
+
+        @include desktop {
+            &:hover .heart--to >i {
+            animation: heart-fillup 450ms 150ms forwards;
+            }
+        }
+} /*fin animation coeur qui se remplie*/
+
+/*animation arrivé page de menu*/
+.dish {
+    > h2 {
+        animation: fadeinup 4000ms 250ms forwards linear;
     }
 
-    @include desktop {
-        &:hover .restaurant__card__body__heart--to >i {
-        animation: heart-fillup 450ms 150ms forwards;
-        }
+    &__sub {
+        animation: fadeinup 1000ms 300ms forwards linear;
     }
-} 
+
+    &__case {
+        animation: fadeinup 1000ms;
+        
+    }
+}
 
 

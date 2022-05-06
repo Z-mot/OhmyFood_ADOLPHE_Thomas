@@ -29,3 +29,7 @@
     font-size: 7vw;
     color: $primaire;
 }
+
+@mixin box-shadow {
+    box-shadow: 1px 1px 5px grey
+}
