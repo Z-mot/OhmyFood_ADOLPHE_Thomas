@@ -25,18 +25,18 @@
 } /*fin animation coeur qui se remplie*/
 
 /*animation arrivé page de menu*/
-.dish {
-    > h2 {
-        animation: fadeinup 4000ms 250ms forwards linear;
-    }
+.anim {
+    @for $d from 1 through 18 {
+        &--#{$d} { 
+            animation-name: fadeinup;
+            animation-delay: 500ms*$d;
+            animation-duration: 1000ms;
+            animation-fill-mode: backwards;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
-    &__sub {
-        animation: fadeinup 1000ms 300ms forwards linear;
-    }
-
-    &__case {
-        animation: fadeinup 1000ms;
-        
     }
 }
 
