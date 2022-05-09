@@ -59,6 +59,8 @@
         transform: scaleX(1);
         flex: 1 1 25%;
         opacity: 1;
+        margin-left: 5vw;
+        padding: 0vw 5vw 0vw 5vw;
     }
 }/*fin keyframes slide*/
 
@@ -71,4 +73,4 @@
     to {
         transform: rotate(0deg);
     }
-}
+}/*fin keyframes check*/

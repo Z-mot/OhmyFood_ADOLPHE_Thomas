@@ -55,6 +55,8 @@
     transform: scaleX(1);
     flex: 1 1 25%;
     opacity: 1;
+    margin-left: 5vw;
+    padding: 0vw 5vw 0vw 5vw;
   }
 }
 /*fin keyframes slide*/
@@ -67,6 +69,7 @@
     transform: rotate(0deg);
   }
 }
+/*fin keyframes check*/
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -418,15 +421,6 @@ button::after {
 .anim--17 {
   animation-name: fadeinup;
   animation-delay: 5100ms;
-  animation-duration: 600ms;
-  animation-fill-mode: backwards;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.anim--18 {
-  animation-name: fadeinup;
-  animation-delay: 5400ms;
   animation-duration: 600ms;
   animation-fill-mode: backwards;
   width: 100%;
@@ -828,6 +822,7 @@ button::after {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: 100%;
 }
 .menu .dish__case__text__dish {
   font-size: 4.4vw;
@@ -849,7 +844,7 @@ button::after {
 .menu .dish__case__price {
   display: flex;
   align-items: flex-end;
-  padding: 5vw;
+  padding: 5vw 0vw 5vw 0vw;
   font-size: 4vw;
   font-weight: bolder;
   z-index: 1;
