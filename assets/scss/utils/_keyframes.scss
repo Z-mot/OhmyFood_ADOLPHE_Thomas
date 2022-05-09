@@ -39,11 +39,36 @@
 @keyframes fadeinup {
     from {
         opacity: 0;
-        transform: translatey(50%);
+        transform: translateY(50%);
     }
 
     to {
         opacity: 1;
-        transform: translatey(0%);
+        transform: translateY(0%);
+    }
+}/*fin keyframes fadeinup*/
+
+/*keyframes slide*/
+@keyframes slide {
+    from {
+        transform: scaleX(0);
+        flex: 0 0 0%;
+    }
+
+    to {
+        transform: scaleX(1);
+        flex: 1 1 25%;
+        opacity: 1;
+    }
+}/*fin keyframes slide*/
+
+/*keyframes check*/
+@keyframes check {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }
