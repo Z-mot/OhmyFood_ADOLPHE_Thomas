@@ -56,17 +56,27 @@
             box-shadow: 3px 3px 7px grey;
 
             &__text {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
                 &__dish {
                     font-size: 4.4vw;
                     font-weight: bold;
                     padding: 4vw 4vw 1vw 4vw;
                     margin: 0vw;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
 
                 &__accompaniment {
                     font-size: 3.4vw;
                     padding: 1vw 4vw 4vw 4vw;
                     margin: 0px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
 
@@ -76,6 +86,26 @@
                 padding: 5vw;
                 font-size: 4vw;
                 font-weight: bolder;
+                z-index: 1;
+            }
+        }
+
+        &__check {
+            display: flex;
+            height: 100%;
+            border-radius: 0px 20px 20px 0px;
+            background-color: $tertiaire;
+            margin-bottom: 5vw;
+            box-shadow: 3px 3px 7px grey;
+
+            > i {
+                color: $lgg;
+                display: flex;
+                align-items: center;
+                font-size: 8vw;
+                width: 100%;
+                justify-content: center;
+                
             }
         }
     }
