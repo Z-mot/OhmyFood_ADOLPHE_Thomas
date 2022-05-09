@@ -29,8 +29,8 @@
     @for $d from 1 through 18 {
         &--#{$d} { 
             animation-name: fadeinup;
-            animation-delay: 500ms*$d;
-            animation-duration: 1000ms;
+            animation-delay: 300ms*$d;
+            animation-duration: 600ms;
             animation-fill-mode: backwards;
             width: 100%;
             display: flex;
@@ -38,6 +38,25 @@
         }
 
     }
+}/*fin animation arrivé page de menu*/ 
+
+/*animation clique sur plat*/
+.dish__check {
+    transform-origin: center right;
+    opacity:0;
+}
+
+.dish__case {
+    &:active {
+        .dish__check {
+        animation: slide 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+
+        i {
+            animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+        }
+        }
+    }
+
 }
 
 
