@@ -1,0 +1,31 @@
+.sticker {
+    height:0vw;
+    width:0vw;
+
+    > p {
+        width: 15vw;
+        height: 5vw;
+        font-size: 3vw;
+        color: $tertiaire_fonce;
+        background-color: $tertiaire;
+        position: relative;
+        left: 68vw;
+        bottom: 18vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include pad {
+            left: 26vw;
+            bottom: 12vw;
+            font-size: 1.7vw;
+            width: 9vw;
+            height: 3vw;
+        }
+
+        @include desktop {
+            left: 26vw;
+            bottom: 12.5vw;
+        }
+    }
+}

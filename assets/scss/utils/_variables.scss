@@ -1,13 +1,15 @@
-$breakpoints: (
-     pad: 768px, desktop: 1024px 
-);
+/*déclaration variables breakpoints*/
+$breakpoints: (pad: 768px, desktop: 1024px );
+/*fin déclaration variables breakpoints*/
 
 /* déclaration variables de couleurs*/
 $primaire: #9356DC;
-$primaire_clair: lighten(#9356DC, 5);
+$primaire_clair: lighten($primaire, 5);
 $secondaire: #FF79DA;
-$secondaire_clair: lighten(#FF79DA, 5);
+$secondaire_clair: lighten($secondaire, 5);
 $tertiaire: #99E2D0;
+$tertiaire_fonce: darken($tertiaire, 50);
 $lgg: rgb(240, 238, 238);
 $dkg: rgb(214, 212, 212);
 $footcol: white;
+/*fin déclaration variables de couleurs*/
