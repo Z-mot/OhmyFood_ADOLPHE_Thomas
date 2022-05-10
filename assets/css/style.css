@@ -146,11 +146,31 @@ header {
   justify-content: center;
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    justify-content: flex-end;
+  }
+}
 header .logo {
   display: flex;
 }
 header .logo > img {
   width: 50vw;
+}
+@media screen and (min-width: 768px) {
+  header .logo > img {
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo > img {
+    width: 20vw;
+  }
 }
 header .logo > a {
   text-decoration: none;
@@ -162,6 +182,18 @@ header .logo > a > i {
   font-size: 7vw;
   align-items: center;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  header .logo > a > i {
+    right: 70vw;
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo > a > i {
+    right: 70vw;
+    font-size: 6vw;
+  }
 }
 
 footer {
@@ -176,16 +208,60 @@ footer .logo {
   align-items: flex-start;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  footer .logo {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .logo {
+    justify-content: center;
+  }
+}
 footer .logo img {
   height: 4.5vw;
   padding: 20px 10px 15px 0px;
   filter: invert(100);
+}
+@media screen and (min-width: 768px) {
+  footer .logo img {
+    width: 15vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .logo img {
+    width: 15vw;
+  }
 }
 footer ul {
   width: 90%;
   list-style-type: none;
   line-height: 1.5;
   font-size: 3.5vw;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    line-height: 1;
+    font-size: 2.5vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    line-height: 1;
+    font-size: 2.5vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer ul li {
+    padding-right: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer ul li {
+    padding-right: 5vw;
+  }
 }
 footer ul li a {
   display: flex;
@@ -217,6 +293,18 @@ button {
   border: none;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  button {
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: 2vw;
+    white-space: nowrap;
+  }
 }
 button:active {
   box-shadow: 1px 1px 5px grey;
@@ -254,6 +342,16 @@ button::after {
   color: #9356DC;
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .heart--from > i {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart--from > i {
+    font-size: 3vw;
+  }
+}
 .heart--to > i {
   position: absolute;
   right: 9vw;
@@ -262,6 +360,16 @@ button::after {
   z-index: 2;
   transform-origin: center 75%;
   transform: scale(0, 0);
+}
+@media screen and (min-width: 768px) {
+  .heart--to > i {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart--to > i {
+    font-size: 3vw;
+  }
 }
 .heart:active .heart--to > i {
   animation: heart-fillup 450ms 150ms forwards;
@@ -283,6 +391,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--1 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--1 {
+    width: 50%;
+  }
+}
 .anim--2 {
   animation-name: fadeinup;
   animation-delay: 600ms;
@@ -291,6 +409,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--2 {
+    width: 50%;
+  }
 }
 .anim--3 {
   animation-name: fadeinup;
@@ -301,6 +429,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--3 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--3 {
+    width: 50%;
+  }
+}
 .anim--4 {
   animation-name: fadeinup;
   animation-delay: 1200ms;
@@ -309,6 +447,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--4 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--4 {
+    width: 50%;
+  }
 }
 .anim--5 {
   animation-name: fadeinup;
@@ -319,6 +467,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--5 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--5 {
+    width: 50%;
+  }
+}
 .anim--6 {
   animation-name: fadeinup;
   animation-delay: 1800ms;
@@ -327,6 +485,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--6 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--6 {
+    width: 50%;
+  }
 }
 .anim--7 {
   animation-name: fadeinup;
@@ -337,6 +505,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--7 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--7 {
+    width: 50%;
+  }
+}
 .anim--8 {
   animation-name: fadeinup;
   animation-delay: 2400ms;
@@ -345,6 +523,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--8 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--8 {
+    width: 50%;
+  }
 }
 .anim--9 {
   animation-name: fadeinup;
@@ -355,6 +543,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--9 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--9 {
+    width: 50%;
+  }
+}
 .anim--10 {
   animation-name: fadeinup;
   animation-delay: 3000ms;
@@ -363,6 +561,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--10 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--10 {
+    width: 50%;
+  }
 }
 .anim--11 {
   animation-name: fadeinup;
@@ -373,6 +581,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--11 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--11 {
+    width: 50%;
+  }
+}
 .anim--12 {
   animation-name: fadeinup;
   animation-delay: 3600ms;
@@ -381,6 +599,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--12 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--12 {
+    width: 50%;
+  }
 }
 .anim--13 {
   animation-name: fadeinup;
@@ -391,6 +619,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--13 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--13 {
+    width: 50%;
+  }
+}
 .anim--14 {
   animation-name: fadeinup;
   animation-delay: 4200ms;
@@ -399,6 +637,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--14 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--14 {
+    width: 50%;
+  }
 }
 .anim--15 {
   animation-name: fadeinup;
@@ -409,6 +657,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--15 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--15 {
+    width: 50%;
+  }
+}
 .anim--16 {
   animation-name: fadeinup;
   animation-delay: 4800ms;
@@ -418,6 +676,16 @@ button::after {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .anim--16 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--16 {
+    width: 50%;
+  }
+}
 .anim--17 {
   animation-name: fadeinup;
   animation-delay: 5100ms;
@@ -426,6 +694,16 @@ button::after {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .anim--17 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .anim--17 {
+    width: 50%;
+  }
 }
 
 /*fin animation arrivé page de menu*/
@@ -440,6 +718,14 @@ button::after {
 }
 .dish__case:active .dish__check i {
   animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+}
+@media screen and (min-width: 1024px) {
+  .dish__case:hover .dish__check {
+    animation: slide 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+  }
+  .dish__case:hover .dish__check i {
+    animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+  }
 }
 
 .loader {
@@ -599,11 +885,17 @@ button::after {
 @media screen and (min-width: 768px) {
   #geoloc {
     justify-content: flex-start;
+    width: 50%;
+    border-radius: 30px;
+    margin-left: 1vw;
   }
 }
 @media screen and (min-width: 1024px) {
   #geoloc {
     justify-content: flex-start;
+    width: 40%;
+    border-radius: 30px;
+    margin-left: 1vw;
   }
 }
 #geoloc > i {
@@ -612,9 +904,33 @@ button::after {
   font-size: 5vw;
   padding-right: 7px;
 }
+@media screen and (min-width: 768px) {
+  #geoloc > i {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #geoloc > i {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vw;
+  }
+}
 #geoloc > p {
   font-size: 4vw;
   font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  #geoloc > p {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #geoloc > p {
+    font-size: 2vw;
+  }
 }
 
 /* fin de la mise en forme de la géolocalisation*/
@@ -627,10 +943,44 @@ button::after {
   background-color: rgb(240, 238, 238);
   padding: 15px 0px 30px 0px;
 }
+@media screen and (min-width: 768px) {
+  .prez {
+    flex-direction: row;
+    padding: 0vw;
+    margin: 4vw 0vw 4vw 0vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prez {
+    flex-direction: row;
+    padding: 0vw;
+    margin: 4vw 0vw 4vw 0vw;
+  }
+}
 .prez__title {
   font-size: 9vw;
   width: 90%;
   font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  .prez__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    width: 100%;
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prez__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    width: 100%;
+    height: 10vw;
+  }
 }
 .prez__title > p {
   text-align: center;
@@ -640,8 +990,44 @@ button::after {
   width: 90%;
   padding-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .prez__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    width: 50%;
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prez__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    width: 50%;
+    height: 10vw;
+  }
+}
 .prez__subtitle > p {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .prez__button {
+    position: relative;
+    right: 60vw;
+    top: 11vw;
+    width: 0%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prez__button {
+    position: relative;
+    right: 60vw;
+    top: 11vw;
+    width: 0%;
+  }
 }
 
 /*fin mise en forme de la présentation*/
@@ -653,10 +1039,34 @@ button::after {
   align-items: center;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .running {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 .running__title {
   font-size: 7vw;
   width: 90%;
   font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  .running__title {
+    font-size: 3vw;
+    margin-top: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running__title {
+    font-size: 3vw;
+    margin-top: 4vw;
+  }
 }
 .running__case {
   display: flex;
@@ -668,6 +1078,24 @@ button::after {
   border: none;
   box-shadow: 2px 8px 15px rgb(214, 212, 212);
 }
+@media screen and (min-width: 768px) {
+  .running__case {
+    font-size: 3vw;
+    padding: 0vw;
+    margin: 2vw;
+    width: 40%;
+    height: 8vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running__case {
+    font-size: 3vw;
+    padding: 0vw;
+    margin: 2vw;
+    width: 40%;
+    height: 8vw;
+  }
+}
 .running__case__num {
   display: flex;
   font-size: 5vw;
@@ -678,11 +1106,37 @@ button::after {
   right: 37px;
   padding: 1vw 2vw 1vw 2vw;
 }
+@media screen and (min-width: 768px) {
+  .running__case__num {
+    font-size: 3vw;
+    padding: 1.5vw 2vw 4vw 2vw;
+    bottom: 16px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running__case__num {
+    font-size: 3vw;
+    padding: 1.5vw 2vw 4vw 2vw;
+    bottom: 25px;
+    right: 37px;
+  }
+}
 .running__case > i {
   display: flex;
   align-items: center;
   font-size: 5vw;
   color: darkgrey;
+}
+@media screen and (min-width: 768px) {
+  .running__case > i {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running__case > i {
+    font-size: 3vw;
+  }
 }
 .running__case__descript {
   display: flex;
@@ -690,6 +1144,16 @@ button::after {
   font-size: 4vw;
   font-weight: bold;
   padding-left: 35px;
+}
+@media screen and (min-width: 768px) {
+  .running__case__descript {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .running__case__descript {
+    font-size: 2vw;
+  }
 }
 
 /*fin mise en forme de la partie fonctionnement*/
@@ -702,10 +1166,32 @@ button::after {
   background-color: rgb(240, 238, 238);
   padding-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 .restaurant__title {
   font-size: 7vw;
   width: 90%;
   font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__title {
+    font-size: 3vw;
+  }
 }
 .restaurant__card {
   display: flex;
@@ -713,6 +1199,20 @@ button::after {
   margin: 20px 0px 20px 0px;
   border-radius: 25px;
   box-shadow: 3px 3px 8px grey;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__card {
+    width: 40%;
+    margin: 40px;
+    height: 25vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__card {
+    width: 40%;
+    margin: 40px;
+    height: 25vw;
+  }
 }
 .restaurant__card a {
   display: flex;
@@ -746,8 +1246,28 @@ button::after {
   font-weight: bold;
   font-size: 4.5vw;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__card__body__text__name {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__card__body__text__name {
+    font-size: 3vw;
+  }
+}
 .restaurant__card__body__text__location {
   font-size: 4vw;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__card__body__text__location {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__card__body__text__location {
+    font-size: 2vw;
+  }
 }
 
 /*fin de la mise en forme de la partie restaurant*/
@@ -756,6 +1276,18 @@ button::after {
   align-items: flex-end;
   position: relative;
   bottom: 11vw;
+}
+@media screen and (min-width: 768px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
 }
 .heart--from {
   display: flex;
@@ -769,10 +1301,30 @@ button::after {
 .img_prez {
   height: 60vw;
 }
+@media screen and (min-width: 768px) {
+  .img_prez {
+    height: 40vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img_prez {
+    height: 40vw;
+  }
+}
 .img_prez img {
   width: 100%;
   height: 80vw;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .img_prez img {
+    height: 60vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img_prez img {
+    height: 60vw;
+  }
 }
 
 .menu {
@@ -786,13 +1338,49 @@ button::after {
   padding: 5vw;
   font-size: 7vw;
 }
+@media screen and (min-width: 768px) {
+  .menu > h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu > h1 {
+    font-size: 3vw;
+  }
+}
 .menu .heart {
   bottom: 8vw;
+}
+@media screen and (min-width: 768px) {
+  .menu .heart {
+    bottom: 7vw;
+    left: -49vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .heart {
+    bottom: 7vw;
+    left: -49vw;
+  }
 }
 .menu .dish {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .menu .dish {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .menu .dish__sub {
   position: relative;
@@ -800,6 +1388,22 @@ button::after {
   width: 10vw;
   border-top: 1vw solid #99E2D0;
   margin-bottom: 3vw;
+}
+@media screen and (min-width: 768px) {
+  .menu .dish__sub {
+    right: 69.7vw;
+    width: 4vw;
+    top: 1vw;
+    border-top: 0.5vw solid #99E2D0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__sub {
+    right: 69.7vw;
+    width: 4vw;
+    top: 1vw;
+    border-top: 0.5vw solid #99E2D0;
+  }
 }
 .menu .dish h2 {
   display: flex;
@@ -809,6 +1413,18 @@ button::after {
   font-weight: lighter;
   margin: 0vw 0vw 1vw 0vw;
 }
+@media screen and (min-width: 768px) {
+  .menu .dish h2 {
+    font-size: 3vw;
+    padding-bottom: 3.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish h2 {
+    font-size: 3vw;
+    padding-bottom: 3.5vw;
+  }
+}
 .menu .dish__case {
   display: flex;
   justify-content: space-between;
@@ -817,6 +1433,18 @@ button::after {
   background-color: rgb(240, 238, 238);
   margin-bottom: 5vw;
   box-shadow: 3px 3px 7px grey;
+}
+@media screen and (min-width: 768px) {
+  .menu .dish__case {
+    border-radius: 30px;
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__case {
+    border-radius: 50px;
+    height: 10vw;
+  }
 }
 .menu .dish__case__text {
   display: flex;
@@ -833,6 +1461,18 @@ button::after {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .menu .dish__case__text__dish {
+    font-size: 2vw;
+    padding: 2vw 2vw 1vw 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__case__text__dish {
+    font-size: 2vw;
+    padding: 2vw 2vw 1vw 2vw;
+  }
+}
 .menu .dish__case__text__accompaniment {
   font-size: 3.4vw;
   padding: 1vw 4vw 4vw 4vw;
@@ -840,6 +1480,18 @@ button::after {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .menu .dish__case__text__accompaniment {
+    font-size: 1.7vw;
+    padding: 1vw 2vw 2vw 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__case__text__accompaniment {
+    font-size: 1.7vw;
+    padding: 1vw 2vw 2vw 2vw;
+  }
 }
 .menu .dish__case__price {
   display: flex;
@@ -849,6 +1501,18 @@ button::after {
   font-weight: bolder;
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .menu .dish__case__price {
+    font-size: 2vw;
+    padding: 5vw 0vw 3vw 0vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__case__price {
+    font-size: 2vw;
+    padding: 5vw 0vw 3vw 0vw;
+  }
+}
 .menu .dish__check {
   display: flex;
   height: 100%;
@@ -856,6 +1520,18 @@ button::after {
   background-color: #99E2D0;
   margin-bottom: 5vw;
   box-shadow: 3px 3px 7px grey;
+}
+@media screen and (min-width: 768px) {
+  .menu .dish__check {
+    width: 4%;
+    border-radius: 0px 30px 30px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__check {
+    width: 4%;
+    border-radius: 0px 50px 50px 0px;
+  }
 }
 .menu .dish__check > i {
   color: rgb(240, 238, 238);
@@ -865,14 +1541,46 @@ button::after {
   width: 100%;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .menu .dish__check > i {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .dish__check > i {
+    font-size: 6vw;
+  }
+}
 .menu__button {
   display: flex;
   justify-content: center;
   margin: 7vw 0vw 15vw 0vw;
 }
+@media screen and (min-width: 768px) {
+  .menu__button {
+    margin: 3vw -48vw 7vw 0vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__button {
+    margin: 3vw -48vw 7vw 0vw;
+  }
+}
 .menu__button .button {
   font-size: 5vw;
   width: 50vw;
+}
+@media screen and (min-width: 768px) {
+  .menu__button .button {
+    font-size: 3vw;
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__button .button {
+    font-size: 3vw;
+    width: 30vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

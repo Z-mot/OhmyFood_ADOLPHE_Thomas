@@ -28,6 +28,14 @@
     right: 9vw;
     font-size: 7vw;
     color: $primaire;
+
+    @include pad {
+        font-size: 3vw;
+    }
+
+    @include desktop {
+        font-size: 3vw;
+    }
 }
 
 @mixin box-shadow {

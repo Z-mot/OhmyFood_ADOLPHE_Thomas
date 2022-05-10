@@ -35,6 +35,14 @@
             width: 100%;
             display: flex;
             justify-content: center;
+
+            @include pad {
+                width: 50%;
+            }
+    
+            @include desktop {
+                width: 50%;
+            }
         }
 
     }
@@ -51,9 +59,19 @@
         .dish__check {
         animation: slide 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
 
-        i {
-            animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+            i {
+                animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+            }
         }
+    }
+    @include desktop {
+        &:hover .dish__check {
+            animation: slide 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+
+            i {
+                animation: check 700ms 150ms both cubic-bezier(0, 0.77, 0.58, 1);
+            }
+
         }
     }
 }

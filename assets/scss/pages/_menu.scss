@@ -1,10 +1,26 @@
 .img_prez {
     height: 60vw;
 
+    @include pad {
+        height: 40vw;
+    }
+
+    @include desktop {
+        height: 40vw;
+    }    
+
     img {
         width: 100%;
         height: 80vw;
         object-fit: cover;
+
+        @include pad {
+            height: 60vw;
+        }
+    
+        @include desktop {
+            height: 60vw;
+        }
     }
 }
 
@@ -18,10 +34,28 @@
     > h1 {
         padding:5vw;
         font-size: 7vw;
+
+        @include pad {
+            font-size: 3vw;
+        }
+
+        @include desktop {
+            font-size: 3vw;
+        }
     }
 
     .heart {
         bottom: 8vw;
+
+        @include pad {
+            bottom: 7vw;
+            left: -49vw;
+        }
+
+        @include desktop {
+            bottom: 7vw;
+            left: -49vw;
+        } 
     }
 
     .dish{
@@ -29,12 +63,38 @@
         flex-direction: column;
         align-items: center;
 
+        @include pad {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         &__sub {
             position: relative;
             right: 40vw;
             width: 10vw;
             border-top: 1vw solid $tertiaire;
             margin-bottom: 3vw;
+
+            @include pad {
+                right: 69.7vw;
+                width: 4vw;
+                top: 1vw;
+                border-top: 0.5vw solid $tertiaire;
+            }
+    
+            @include desktop {
+                right: 69.7vw;
+                width: 4vw;
+                top: 1vw;
+                border-top: 0.5vw solid $tertiaire;
+            }
         }
 
          h2 {
@@ -44,6 +104,16 @@
             font-size: 6vw;
             font-weight: lighter;
             margin: 0vw 0vw 1vw 0vw;
+
+            @include pad {
+                font-size: 3vw;
+                padding-bottom: 3.5vw;
+            }
+    
+            @include desktop {
+                font-size: 3vw;
+                padding-bottom: 3.5vw;
+            }
         }
 
         &__case {
@@ -54,6 +124,16 @@
             background-color: $lgg;
             margin-bottom: 5vw;
             box-shadow: 3px 3px 7px grey;
+
+            @include pad {
+                border-radius: 30px;
+                height: 10vw;
+            }
+    
+            @include desktop {
+                border-radius: 50px;
+                height: 10vw;
+            }
 
             &__text {
                 display: flex;
@@ -69,6 +149,16 @@
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+
+                    @include pad {
+                        font-size: 2vw;
+                        padding: 2vw 2vw 1vw 2vw;
+                    }
+            
+                    @include desktop {
+                        font-size: 2vw;
+                        padding: 2vw 2vw 1vw 2vw;
+                    }
                 }
 
                 &__accompaniment {
@@ -78,6 +168,16 @@
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+
+                    @include pad {
+                        font-size: 1.7vw;
+                        padding: 1vw 2vw 2vw 2vw
+                    }
+            
+                    @include desktop {
+                        font-size: 1.7vw;
+                        padding: 1vw 2vw 2vw 2vw
+                    }
                 }
             }
 
@@ -88,6 +188,16 @@
                 font-size: 4vw;
                 font-weight: bolder;
                 z-index: 1;
+
+                @include pad {
+                    font-size: 2vw;
+                    padding: 5vw 0vw 3vw 0vw;
+                }
+        
+                @include desktop {
+                    font-size: 2vw;
+                    padding: 5vw 0vw 3vw 0vw;
+                }
             }
         }
 
@@ -99,6 +209,16 @@
             margin-bottom: 5vw;
             box-shadow: 3px 3px 7px grey;
 
+            @include pad {
+                width: 4%;
+                border-radius: 0px 30px 30px 0px;
+            }
+    
+            @include desktop {
+                width: 4%;
+                border-radius: 0px 50px 50px 0px;
+            }
+
             > i {
                 color: $lgg;
                 display: flex;
@@ -107,6 +227,13 @@
                 width: 100%;
                 justify-content: center;
                 
+                @include pad {
+                    font-size: 6vw;
+                }
+        
+                @include desktop {
+                    font-size: 6vw
+                }
             }
         }
     }
@@ -116,9 +243,27 @@
         justify-content: center;
         margin: 7vw 0vw 15vw 0vw;
 
+        @include pad {
+            margin: 3vw -48vw 7vw 0vw;
+        }
+
+        @include desktop {
+            margin: 3vw -48vw 7vw 0vw;
+        }
+
         .button {
             font-size: 5vw;
             width: 50vw;
+
+            @include pad {
+                font-size: 3vw;
+                width: 30vw;
+            }
+    
+            @include desktop {
+                font-size: 3vw;
+                width: 30vw;
+            }
             
         }
     }

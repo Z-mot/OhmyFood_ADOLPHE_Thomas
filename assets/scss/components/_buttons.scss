@@ -8,6 +8,16 @@ button {
     border: none;
     position:relative;
     z-index: 1;
+
+    @include pad {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    @include desktop{
+        font-size: 2vw;
+        white-space: nowrap;
+    }
     
     &:active {
         @include box-shadow;

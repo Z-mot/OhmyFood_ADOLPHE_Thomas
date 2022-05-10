@@ -4,11 +4,27 @@ header {
     justify-content: center;
     padding: 10px;
 
+    @include pad {
+        justify-content: flex-end;
+    }
+
+    @include desktop {
+        justify-content: flex-end;
+    }
+
     .logo {
         display: flex;
 
         > img {
             width: 50vw;
+
+            @include pad {
+                width: 20vw;
+            }
+        
+            @include desktop {
+                width: 20vw;
+            }
         }
 
         > a {
@@ -21,6 +37,16 @@ header {
                 font-size: 7vw;
                 align-items: center;
                 height: 100%;
+
+                @include pad {
+                    right: 70vw;
+                    font-size: 6vw;
+                }
+
+                @include desktop {
+                    right: 70vw;
+                    font-size: 6vw;
+                }
             }
         }
     }
