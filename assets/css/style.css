@@ -890,7 +890,7 @@ button::after {
   background-color: #99E2D0;
   position: relative;
   left: 68vw;
-  bottom: 18vh;
+  bottom: 22vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -907,7 +907,7 @@ button::after {
 @media screen and (min-width: 1024px) {
   .sticker > p {
     left: 26vw;
-    bottom: 12.5vw;
+    bottom: 11.5vw;
   }
 }
 

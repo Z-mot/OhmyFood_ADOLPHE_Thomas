@@ -10,7 +10,7 @@
         background-color: $tertiaire;
         position: relative;
         left: 68vw;
-        bottom: 18vh;
+        bottom: 22vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,7 +25,7 @@
 
         @include desktop {
             left: 26vw;
-            bottom: 12.5vw;
+            bottom: 11.5vw;
         }
     }
 }
