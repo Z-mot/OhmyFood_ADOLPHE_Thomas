@@ -911,6 +911,33 @@ button::after {
   }
 }
 
+.heart {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  bottom: 11vw;
+}
+@media screen and (min-width: 768px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
+}
+.heart--from {
+  display: flex;
+  align-items: center;
+}
+.heart--to {
+  display: flex;
+  align-items: center;
+}
+
 /* mise en forme de la géolocalisation*/
 #geoloc {
   display: flex;
@@ -938,33 +965,25 @@ button::after {
   display: flex;
   align-items: center;
   font-size: 5vw;
-  padding-right: 7px;
+  position: relative;
+  left: 10vw;
 }
 @media screen and (min-width: 768px) {
   #geoloc > i {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    left: 4.5vw;
     font-size: 2vw;
   }
 }
-@media screen and (min-width: 1024px) {
-  #geoloc > i {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    font-size: 2vw;
-  }
-}
-#geoloc > p {
-  font-size: 4vw;
-  font-weight: bolder;
+
+#search {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 5vw;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  #geoloc > p {
-    font-size: 2vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #geoloc > p {
+  #search {
     font-size: 2vw;
   }
 }

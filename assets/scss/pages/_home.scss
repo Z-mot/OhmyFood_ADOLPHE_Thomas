@@ -23,32 +23,25 @@
         display: flex;
         align-items: center;
         font-size: 5vw; 
-        padding-right: 7px;
+        position:relative;
+        left: 10vw;
 
         @include pad {
-            padding-left: 2vw;
-            padding-right : 2vw;
-            font-size: 2vw;
-        }
-
-        @include desktop{
-            padding-left: 2vw;
-            padding-right : 2vw;
+            left: 4.5vw;
             font-size: 2vw;
         }
     }
+}
 
-    > p {
-        font-size: 4vw;
-        font-weight: bolder;
+#search {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 5vw;
+    text-align: center;
 
-        @include pad {
-            font-size: 2vw;
-        }
-
-        @include desktop{
-            font-size: 2vw;
-        }
+    @include pad {
+        font-size: 2vw;
     }
 }/* fin de la mise en forme de la géolocalisation*/
 
