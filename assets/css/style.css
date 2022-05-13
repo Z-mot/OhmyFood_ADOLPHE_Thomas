@@ -194,7 +194,7 @@ header .logo > a > i {
 }
 @media screen and (min-width: 1024px) {
   header .logo > a > i {
-    right: 70vw;
+    right: 73vw;
     font-size: 6vw;
   }
 }
