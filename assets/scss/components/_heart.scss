@@ -1,19 +1,22 @@
-.heart {
-    display: flex;
-    align-items: flex-end;
+#heartcheck {
+    @for $g from 1 through 8 {
+        &-#{$g} {
+        position: absolute;
+        left: -9999px;
+        }
+    }
+}
+
+label {
     position: relative;
-    bottom: 11vw;
+    top: 100%;
 
     @include pad {
-        bottom: 3vw;
-        left: 5vw;
+        top: 25vw;
     }
+}
 
-    @include desktop {
-        bottom: 3vw;
-        left: 5vw;
-    }
-
+.heart {
     &--from {
         display: flex;
         align-items: center;

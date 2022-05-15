@@ -338,6 +338,10 @@ button::after {
 }
 
 /*animation du coeur qui se remplie*/
+.heartcheck:checked + label .heart--to > i {
+  animation: heart-fillup 450ms 150ms forwards;
+}
+
 .heart--from > i {
   position: absolute;
   right: 9vw;
@@ -373,9 +377,6 @@ button::after {
   .heart--to > i {
     font-size: 3vw;
   }
-}
-.heart:active .heart--to > i {
-  animation: heart-fillup 450ms 150ms forwards;
 }
 @media screen and (min-width: 1024px) {
   .heart:hover .heart--to > i {
@@ -911,24 +912,49 @@ button::after {
   }
 }
 
-.heart {
-  display: flex;
-  align-items: flex-end;
+#heartcheck-1 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-2 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-3 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-4 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-5 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-6 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-7 {
+  position: absolute;
+  left: -9999px;
+}
+#heartcheck-8 {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
   position: relative;
-  bottom: 11vw;
+  top: 100%;
 }
 @media screen and (min-width: 768px) {
-  .heart {
-    bottom: 3vw;
-    left: 5vw;
+  label {
+    top: 25vw;
   }
 }
-@media screen and (min-width: 1024px) {
-  .heart {
-    bottom: 3vw;
-    left: 5vw;
-  }
-}
+
 .heart--from {
   display: flex;
   align-items: center;
@@ -1408,14 +1434,8 @@ button::after {
 }
 @media screen and (min-width: 768px) {
   .menu .heart {
-    bottom: 7vw;
-    left: -49vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu .heart {
-    bottom: 7vw;
-    left: -49vw;
+    bottom: 31.5vw;
+    left: -53vw;
   }
 }
 .menu .dish {

@@ -48,14 +48,9 @@
         bottom: 8vw;
 
         @include pad {
-            bottom: 7vw;
-            left: -49vw;
+            bottom: 31.5vw;
+            left: -53vw;
         }
-
-        @include desktop {
-            bottom: 7vw;
-            left: -49vw;
-        } 
     }
 
     .dish{

@@ -1,4 +1,8 @@
 /*animation du coeur qui se remplie*/
+.heartcheck:checked + label .heart--to >i {
+    animation: heart-fillup 450ms 150ms forwards;  
+}
+
 
 .heart {
     &--from > i {
@@ -13,15 +17,11 @@
     transform: scale(0, 0);
     }
 
-    &:active .heart--to >i {
-            animation: heart-fillup 450ms 150ms forwards;
+    @include desktop {
+        &:hover .heart--to >i {
+        animation: heart-fillup 450ms 150ms forwards;
         }
-
-        @include desktop {
-            &:hover .heart--to >i {
-            animation: heart-fillup 450ms 150ms forwards;
-            }
-        }
+    }
 } /*fin animation coeur qui se remplie*/
 
 /*animation arrivé page de menu*/
