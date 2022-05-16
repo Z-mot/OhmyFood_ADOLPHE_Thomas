@@ -181,7 +181,7 @@ header .logo > a {
 header .logo > a > i {
   display: flex;
   position: relative;
-  right: 11vw;
+  right: 20vw;
   font-size: 7vw;
   align-items: center;
   height: 100%;
@@ -1528,7 +1528,7 @@ label {
   width: 100%;
 }
 .menu .dish__case__text__dish {
-  font-size: 4.4vw;
+  font-size: 3.9vw;
   font-weight: bold;
   padding: 4vw 4vw 1vw 4vw;
   margin: 0vw;
