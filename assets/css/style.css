@@ -346,7 +346,8 @@ button::after {
   position: absolute;
   right: 9vw;
   font-size: 7vw;
-  color: #9356DC;
+  color: #a16be0;
+  color: black;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -363,7 +364,7 @@ button::after {
   position: absolute;
   right: 9vw;
   font-size: 7vw;
-  color: #9356DC;
+  color: #a16be0;
   z-index: 2;
   transform-origin: center 75%;
   transform: scale(0, 0);
@@ -736,7 +737,7 @@ button::after {
   animation: loader 4000ms forwards cubic-bezier(0.82, 0.13, 0.83, 0.13);
   width: 100%;
   height: 100%;
-  background-color: rgb(214, 212, 212);
+  background-color: rgb(234, 234, 234);
   position: fixed;
   z-index: 10;
 }
@@ -955,6 +956,24 @@ label {
   }
 }
 
+.heart {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  bottom: 11vw;
+}
+@media screen and (min-width: 768px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart {
+    bottom: 3vw;
+    left: 5vw;
+  }
+}
 .heart--from {
   display: flex;
   align-items: center;
@@ -968,7 +987,7 @@ label {
 #geoloc {
   display: flex;
   justify-content: center;
-  background-color: rgb(214, 212, 212);
+  background-color: rgb(234, 234, 234);
   box-shadow: inset 0px 5px 5px grey;
 }
 @media screen and (min-width: 768px) {
@@ -1021,7 +1040,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(246, 246, 246);
   padding: 15px 0px 30px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -1155,9 +1174,9 @@ label {
   padding: 0px 20px 0px 20px;
   margin: 15px 0px 15px 0px;
   width: 80%;
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(246, 246, 246);
   border: none;
-  box-shadow: 2px 8px 15px rgb(214, 212, 212);
+  box-shadow: 2px 8px 15px rgb(234, 234, 234);
 }
 @media screen and (min-width: 768px) {
   .running__case {
@@ -1244,7 +1263,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(246, 246, 246);
   padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -1352,33 +1371,6 @@ label {
 }
 
 /*fin de la mise en forme de la partie restaurant*/
-.heart {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  bottom: 11vw;
-}
-@media screen and (min-width: 768px) {
-  .heart {
-    bottom: 3vw;
-    left: 5vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .heart {
-    bottom: 3vw;
-    left: 5vw;
-  }
-}
-.heart--from {
-  display: flex;
-  align-items: center;
-}
-.heart--to {
-  display: flex;
-  align-items: center;
-}
-
 .img_prez {
   height: 60vw;
 }
@@ -1413,7 +1405,7 @@ label {
   flex-direction: column;
   border-radius: 12vw 12vw 0vw 0vw;
   position: relative;
-  background-color: rgb(214, 212, 212);
+  background-color: rgb(246, 246, 246);
 }
 .menu > h1 {
   padding: 5vw;
@@ -1505,7 +1497,7 @@ label {
   justify-content: space-between;
   width: 90%;
   border-radius: 20px;
-  background-color: rgb(240, 238, 238);
+  background-color: white;
   margin-bottom: 5vw;
   box-shadow: 3px 3px 7px grey;
 }
@@ -1609,7 +1601,7 @@ label {
   }
 }
 .menu .dish__check > i {
-  color: rgb(240, 238, 238);
+  color: white;
   display: flex;
   align-items: center;
   font-size: 8vw;
