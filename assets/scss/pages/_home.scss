@@ -358,29 +358,3 @@
     }
 }/*fin de la mise en forme de la partie restaurant*/
             
-.heart {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    bottom: 11vw;
-
-    @include pad {
-        bottom: 3vw;
-        left: 5vw;
-    }
-
-    @include desktop {
-        bottom: 3vw;
-        left: 5vw;
-    }
-
-    &--from {
-        display: flex;
-        align-items: center;
-    }
-
-    &--to {
-        display: flex;
-        align-items: center;
-    }         
-}

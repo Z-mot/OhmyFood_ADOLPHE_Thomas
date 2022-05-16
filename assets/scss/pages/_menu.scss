@@ -29,7 +29,7 @@
     flex-direction: column;
     border-radius: 12vw 12vw 0vw 0vw;
     position: relative;
-    background-color: $dkg;
+    background-color: $lgg;
 
     > h1 {
         padding:5vw;
@@ -116,7 +116,7 @@
             justify-content: space-between;
             width: 90%;
             border-radius: 20px;
-            background-color: $lgg;
+            background-color: white;
             margin-bottom: 5vw;
             box-shadow: 3px 3px 7px grey;
 
@@ -215,7 +215,7 @@
             }
 
             > i {
-                color: $lgg;
+                color: white;
                 display: flex;
                 align-items: center;
                 font-size: 8vw;
